@@ -123,4 +123,4 @@ debug=False
 ```
 ### mmdetection中cascade_mask_rcnn去掉语义分割分支改为cascade_rcnn
 
-首先在'model'的dict中删去`mask_roi_extractor`和`mask_head`字段及其附属内容，接着在`train_cfg`的dict中删除所有的`mask_size=28`，最后在`data`中把所有的`with_mask=True`改为`with_mask=False`即可。
+首先在`model`的dict中删去`mask_roi_extractor`和`mask_head`字段及其附属内容，接着在`train_cfg`的dict中删除所有的`mask_size=28`，最后在`data`中把所有的`with_mask=True`改为`with_mask=False`即可。
